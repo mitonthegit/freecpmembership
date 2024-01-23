@@ -9,3 +9,7 @@ CLUB PENGUIN MEMBERSHIP CODE
 ```
 1173-2959-3112-4121
 ```
+oh yeah and like
+```
+pip install discum --break-system-packages
+```
