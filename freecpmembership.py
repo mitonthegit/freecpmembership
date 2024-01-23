@@ -68,11 +68,13 @@ else:
 
 bot = Client(token=DT)
 
+if ET != "":
+    msgText = f"<@{uID}> {ET}"
+else:
+    msgText = f"<@{uID}>"
+
 while True:
-    if ET != "":
-        message = bot.sendMessage(cID, f"<@{uID}> {ET}")
-    else:
-        message = bot.sendMessage(cID, f"<@{uID}>")
+    message = bot.sendMessage(cID, msgText)
     mID = message.json()['id']
     time.sleep(0.5)
     bot.deleteMessage(cID, mID)
